@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
+import { COLORS } from '../../constants';
+
 const SecondaryStory = ({ id, title, image, location, abstract }) => {
   return (
     <a href={`/story/${id}`}>
@@ -21,6 +23,8 @@ const Wrapper = styled.article`
   gap: 4px 16px;
   grid-template-columns: 120px 1fr;
   color: var(--color-gray-900);
+  padding: 16px 0;
+  background-color: ${COLORS.gray[100]};
 `;
 
 const Image = styled.img`
