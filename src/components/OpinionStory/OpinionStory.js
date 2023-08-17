@@ -28,6 +28,10 @@ const Wrapper = styled.article`
   @media ${QUERIES.tabletOnly} {
     display: block;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    gap: 8px;
+  }
 `;
 
 const Avatar = styled.img`

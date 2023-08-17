@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { COLORS } from '../../constants';
+import { COLORS, QUERIES } from '../../constants';
 
 const SecondaryStory = ({ id, title, image, location, abstract }) => {
   return (
@@ -25,6 +25,11 @@ const Wrapper = styled.article`
   color: var(--color-gray-900);
   padding: 16px 0;
   background-color: ${COLORS.gray[100]};
+
+  @media ${QUERIES.tabletOnly} {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const Image = styled.img`
@@ -49,6 +54,11 @@ const Abstract = styled.p`
   grid-area: abstract;
   font-size: 1rem;
   white-space: pre-wrap;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 `;
 
 export default SecondaryStory;

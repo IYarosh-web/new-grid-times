@@ -56,9 +56,10 @@ const SuperHeader = styled.div`
   background: var(--color-gray-900);
   color: white;
   
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     color: ${COLORS.offblack};
     background: var(--color-gray-100);
+    margin-bottom: 50px;
   }
 `;
 
@@ -81,7 +82,7 @@ const ActionGroup = styled.div`
 `;
 
 const MainHeaderMobile = styled(MaxWidthWrapper)`
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     display: none;
   }
 
@@ -99,7 +100,7 @@ const MainHeaderMobile = styled(MaxWidthWrapper)`
 const MainHeaderDesktop = styled(MaxWidthWrapper)`
   display: none;
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     display: block;
   }
 `;
@@ -107,7 +108,7 @@ const MainHeaderDesktop = styled(MaxWidthWrapper)`
 const ShowOnDesktop = styled.div`
   display: none;
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     display: block;
   }
 `;
@@ -115,7 +116,7 @@ const ShowOnDesktop = styled.div`
 const HideOnDesktop = styled.div`
   display: block;
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     display: none;
   }
 `;
@@ -125,7 +126,7 @@ const SubscribeWrapper = styled.div`
   flex-direction: column;
   gap: 8px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   height: 100%;
 `;
 

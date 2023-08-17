@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import { QUERIES } from '../../constants';
+import { COLORS, QUERIES } from '../../constants';
 
 const Advertisement = (props) => {
   return (
